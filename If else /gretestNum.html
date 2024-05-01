@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Find the Gretest number</h1>
+        <input type="number" name="" id="num1">
+        <input type="number" name="" id="num2">
+        <input type="number" name="" id="num3">
+        <button type="submit" onclick="hanldSubumit()">Submit</button>
+
+        <h1 id="num">Greterst Number is =></h1>
+    </center>
+        <hr>
+    <center>
+        
+    </center>
+    <script>
+        function hanldSubumit(){
+            let num1 = document.querySelector("#num1").value;
+            let num2 = document.querySelector("#num2").value;
+            let num3 = document.querySelector("#num3").value;
+            let ans = document.querySelector("#num");
+
+            if( num1 > num2 && num1 > num3){
+                ans.innerHTML = "Greters Nymber us " + num1;
+                ans.setAttribute("style, ")
+            }
+            else if (num2 > num1 && num2 > num3){
+                ans.innerHTML = "gretete s" + num2
+            }
+            else{
+                ans.innerHTML = "grwtsyugu is " + num3
+            }
+
+        }
+    </script>
+</body>
+</html>
